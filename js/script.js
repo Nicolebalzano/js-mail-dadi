@@ -23,7 +23,17 @@
 // Prompt che chiede all'utente la sua mail
 // Controlla che la mail inserita dall'utente sia nella lista
 //Stampa messaggio del risultato della ricerca
- const mailLista = ["Nicolebalzano@gmail.com", "Lauraparesi01@gmail.com", "Lorenzomassi@gmail.com", "carloaresi10@gmail.com", "swamy12@gmail.com", "kauastella@gmail.com", "anabelfiore@gmail.com", "manfredi99@gmail.com", "maria22@gmail.com", "juju33@gmail.com"];
- const = prompt("Inserisci qui la tua mail");
+const mailList = ["Nicolebalzano@gmail.com", "Lauraparesi01@gmail.com", "Lorenzomassi@gmail.com", "carloaresi10@gmail.com", "swamy12@gmail.com", "kauastella@gmail.com", "anabelfiore@gmail.com", "manfredi99@gmail.com", "maria22@gmail.com", "juju33@gmail.com"];
+const inserisciMail = prompt("Inserisci qui la tua mail");
+for(let i = 0; i < mailList.length; i++) {
+    const curMail = mailList[i];
+    if (curMail === inserisciMail) {
+        console.log("mail trovata") 
+        break;
+    } else {
+        console.log("Mail non trovata")
+    }
+    }
+
 
 //OUTPUT mail
