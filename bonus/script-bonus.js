@@ -3,13 +3,13 @@
 // const numeri = [2, 5, 8, 3, 10, 7];
 // Output atteso: 20 (2 + 8 + 10)
 
- const numeri = [2, 5, 8, 3, 10, 7];
- let sum = 0; 
- for (let i = 0; i < numeri.length; i++) {
-     const currNum = numeri[i];
-     if (currNum % 2 === 0) {
-        sum = sum + currNum;
-     }
+//  const numeri = [2, 5, 8, 3, 10, 7];
+//  let sum = 0; 
+//  for (let i = 0; i < numeri.length; i++) {
+//      const currNum = numeri[i];
+//      if (currNum % 2 === 0) {
+//         sum = sum + currNum;
+//      }
 
 // }
 // console.log(sum);
@@ -36,15 +36,15 @@
 // Obiettivo: Sommare i numeri che si trovano in posizioni dispari dell’array.
 // const arr = [10, 20, 30, 40, 50, 60];
 // // Output atteso: 20 + 40 + 60 = 120
-const arr = [10, 20, 30, 40, 50, 60];
-sum = 0; 
-for (let i = 0; i <= arr.length; i++) {
-    const currArr = arr[i];
-    if (i % 2 !== 0) {
-        sum = currArr + sum;
-    }
-}
-console.log(sum);
+// const arr = [10, 20, 30, 40, 50, 60];
+// sum = 0; 
+// for (let i = 0; i <= arr.length; i++) {
+//     const currArr = arr[i];
+//     if (i % 2 !== 0) {
+//         sum = currArr + sum;
+//     }
+// }
+// console.log(sum);
 
 
 // 6. Differenza tra max e min
@@ -117,3 +117,12 @@ console.log(sum);
 // Obiettivo: Sommare tutti i numeri che si trovano in posizione pari (0, 2, 4…) ma solo se il numero è dispari.
 // const arr = [1, 4, 3, 6, 5, 8]; 
 // // Posizioni pari: 1 (dispari), 3 (dispari), 5 (dispari) → Somma: 1 + 3 + 5 = 9
+
+const arr = [1, 4, 3, 6, 5, 8]; 
+let sum = 0;
+for (let i = 0; i < arr.length; i++) {
+   const currPosition = arr[i];
+    if ( arr % 2 !== 0 && i % 2 === 0) {
+         sum = sum + currPosition;
+    }
+} console.log(sum);
