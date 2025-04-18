@@ -56,9 +56,9 @@
 // 3) confronta i numeri generati in base al punteggio più alto determina il vincitore
 
 // OUTPUT dado
-let randomNumberGamer = Math.floor(Math.random() *10) +1;
+let randomNumberGamer = Math.floor(Math.random() *6) +1;
 console.log("Numero giocatore 1:" + " " + randomNumberGamer);
-let randomNumberComputer = Math.floor(Math.random() * 10) +1;
+let randomNumberComputer = Math.floor(Math.random() * 6) +1;
 console.log("Numero computer:" + " " + randomNumberComputer);
 if (randomNumberGamer > randomNumberComputer) {
     console.log("Risultato: Giocatore 1 vince");
