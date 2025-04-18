@@ -56,14 +56,24 @@
 // 3) confronta i numeri generati in base al punteggio più alto determina il vincitore
 
 // OUTPUT dado
+let risultatiGamer = [];
+let risultatiComputer = [];
+
 let randomNumberGamer = Math.floor(Math.random() *6) +1;
-console.log("Numero giocatore 1:" + " " + randomNumberGamer);
+console.log("Numero giocatore:" + " " + randomNumberGamer);
 let randomNumberComputer = Math.floor(Math.random() * 6) +1;
 console.log("Numero computer:" + " " + randomNumberComputer);
-if (randomNumberGamer > randomNumberComputer) {
-    console.log("Risultato: Giocatore 1 vince");
-} else if (randomNumberGamer === randomNumberComputer) {
-    console.log("Risultato: Pareggio");
-} else {
-    console.log("Risultato: Computer vince");
-}
+
+
+    if (randomNumberGamer > randomNumberComputer) {
+        let gamerWins = "Giocatore vince";
+        console.log(gamerWins);
+
+    } else if (randomNumberGamer === randomNumberComputer) {
+        let even = "Pareggio"
+        console.log(even);
+    } else {
+       let computerWins = "Computer vince"
+       console.log(computerWins);
+    }
+   
