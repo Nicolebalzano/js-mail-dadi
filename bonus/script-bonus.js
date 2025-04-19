@@ -35,26 +35,26 @@
 // Obiettivo: Creare un nuovo array con gli elementi in ordine inverso (senza usare .reverse()).
 // const input = [1, 2, 3, 4];
 // // Output atteso: [4, 3, 2, 1]
-const input = [1, 2, 3, 4];
-const lastIndex = input.length - 1;
-for (let i = lastIndex; i >= 0; i--) {
-    const curInput = input[i];
-    console.log(curInput);
+// const input = [1, 2, 3, 4];
+// const lastIndex = input.length - 1;
+// for (let i = lastIndex; i >= 0; i--) {
+//     const curInput = input[i];
+//     console.log(curInput);
 
-}     
+// }     
 // -------------------------------------------------------------------------------------------------------
 
 // 4. Trova il minimo
 // Obiettivo: Stampare il valore più piccolo in un array di numeri.
 // const numeri = [45, 2, 89, 3, 22];
 // // Output atteso: 2
-
 // -------------------------------------------------------------------------------------------------------
 
 // 5. Somma degli indici dispari
 // Obiettivo: Sommare i numeri che si trovano in posizioni dispari dell’array.
 // const arr = [10, 20, 30, 40, 50, 60];
 // // Output atteso: 20 + 40 + 60 = 120
+
 // const arr = [10, 20, 30, 40, 50, 60];
 // sum = 0; 
 // for (let i = 0; i <= arr.length; i++) {
@@ -78,7 +78,14 @@ for (let i = lastIndex; i >= 0; i--) {
 // Obiettivo: Contare quanti elementi true ci sono in un array di booleani.
 // const flags = [true, false, true, true, false];
 // // Output atteso: 3
-
+const flags = [true, false, true, true, false];
+let sum = 0;
+for (let i = 0; i < flags.length; i++) {
+    const curFlag = flags[i];
+    if(curFlag === true) {
+        sum = sum + 1;
+    }
+} console.log(sum);
 // -------------------------------------------------------------------------------------------------------
 
 // 8. Crea un nuovo array con i doppi
