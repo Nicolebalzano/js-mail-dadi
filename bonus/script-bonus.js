@@ -18,15 +18,15 @@
 // Obiettivo: Contare quante volte appare il valore "rosso" in un array di stringhe.
 // const colori = ["rosso", "blu", "rosso", "verde", "rosso"];
 // Output atteso: 3
-const colori = ["rosso", "blu", "rosso", "verde", "rosso"]; 
-let sum = 0;
-for (let i  = 0; i < colori.length; i++) {
-    const curColor = colori[i];
-    console.log(curColor);
-    if(curColor === "rosso") {
-    sum = sum + 1;
-    } }
-    console.log(sum);
+// const colori = ["rosso", "blu", "rosso", "verde", "rosso"]; 
+// let sum = 0;
+// for (let i  = 0; i < colori.length; i++) {
+//     const curColor = colori[i];
+//     console.log(curColor);
+//     if(curColor === "rosso") {
+//     sum = sum + 1;
+//     } }
+//     console.log(sum);
     //sum parte da 0 ogni volta che viene trovato il valore "rosso" nell'array al valore iniziale di 0 viene aggiunto 1
     // il risultato finale è dunque 3;
 // -------------------------------------------------------------------------------------------------------
@@ -35,7 +35,13 @@ for (let i  = 0; i < colori.length; i++) {
 // Obiettivo: Creare un nuovo array con gli elementi in ordine inverso (senza usare .reverse()).
 // const input = [1, 2, 3, 4];
 // // Output atteso: [4, 3, 2, 1]
+const input = [1, 2, 3, 4];
+const lastIndex = input.length - 1;
+for (let i = lastIndex; i >= 0; i--) {
+    const curInput = input[i];
+    console.log(curInput);
 
+}     
 // -------------------------------------------------------------------------------------------------------
 
 // 4. Trova il minimo
