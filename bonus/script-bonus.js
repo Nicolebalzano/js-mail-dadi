@@ -78,20 +78,26 @@
 // Obiettivo: Contare quanti elementi true ci sono in un array di booleani.
 // const flags = [true, false, true, true, false];
 // // Output atteso: 3
-const flags = [true, false, true, true, false];
-let sum = 0;
-for (let i = 0; i < flags.length; i++) {
-    const curFlag = flags[i];
-    if(curFlag === true) {
-        sum = sum + 1;
-    }
-} console.log(sum);
+// const flags = [true, false, true, true, false];
+// let sum = 0;
+// for (let i = 0; i < flags.length; i++) {
+//     const curFlag = flags[i];
+//     if(curFlag === true) {
+//         sum = sum + 1;
+//     }
+// } console.log(sum);
 // -------------------------------------------------------------------------------------------------------
 
 // 8. Crea un nuovo array con i doppi
 // Obiettivo: Creare un array in cui ogni numero è il doppio di quello originale. (senza uso di .map)
 // const numeri = [1, 2, 3, 4];
 // // Output atteso: [2, 4, 6, 8]
+const numeri = [1, 2, 3, 4];
+for(let i = 0; i < numeri.length; i++) {
+    const currNum = numeri[i];
+    let numeriDoppi = currNum * 2;
+    console.log(numeriDoppi);
+} 
 
 // -------------------------------------------------------------------------------------------------------
 
